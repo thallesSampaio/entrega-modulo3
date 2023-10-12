@@ -1,0 +1,247 @@
+:root {
+    --color-light-50: #f8fafc;
+    
+    --color-dark-50: #797984;
+    --color-dark-100: #312d37;
+    --color-dark-900: #000;
+
+    --color-yellow-50: #FDBA00;
+    --color-yellow-100: #C99400;
+    --color-yellow-200: #FDCE4C;
+    --color-bronw-50:#7D6625;
+    --color-brown-100:#7D5C00;
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.spanTxt{
+    color: var(--color-yellow-50);
+}
+
+/* CFG HEADER */
+
+header {
+    background-image: url(../img/headerBanner1080p.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+
+.nav li a{
+	transition: all 0.3s ease 0s;
+    font-size: 20px;
+	text-decoration: none;
+	color: var(--color-light-50);
+}
+
+.nav li a:hover {
+    color: var(--color-yellow-50);
+}
+
+.divisor {
+    display: block;
+    padding: 0;
+    margin-top: 2%;
+    width: 100%;
+    height: 0.078125px;
+    background-color: var(--color-light-50);
+    opacity: 0.35;
+}
+
+#carrinho {
+    margin-right: 16px;
+}
+
+.btn-cart {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: transparent;
+  }
+  
+  .btn-cart::after {
+    content: attr(data-quantity);
+    width: fit-content;
+    height: fit-content;
+    font-size: 28px;
+    color: var(--color-yellow-50);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    opacity: 0;
+    visibility: hidden;
+    transition: .2s linear;
+  }
+
+  .icon-cart {
+    width: 24.38px;
+    height: 30.52px;
+    transition: .2s linear;
+  }
+  
+  .icon-cart path {
+    fill: var(--color-light-50);
+    transition: .2s linear;
+  }
+  
+  .btn-cart:hover > .icon-cart {
+    transform: scale(1.2);
+  }
+  
+  .btn-cart:hover > .icon-cart path {
+    fill: var(--color-yellow-50);
+  }
+  
+  .btn-cart:hover::after {
+    visibility: visible;
+    opacity: 1;
+    top: 105%;
+  }
+  
+  .quantity {
+    display: none;
+  }
+  
+/* CFG main DESTINOS*/
+
+.CartBtn {
+    width: 140px;
+    height: 40px;
+    border-radius: 12px;
+    border: 1px solid var(--color-light-50);
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition-duration: .5s;
+    overflow: hidden;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.103);
+    position: relative;
+  }
+  
+  .IconContainer {
+    position: absolute;
+    left: -55px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: 2;
+    transition-duration: .5s;
+  }
+
+  .text {
+    height: 100%;
+    width: fit-content;
+    color: var(--color-light-50);
+    z-index: 1;
+    transition-duration: .5s;
+    font-size: 1.04em;
+    font-weight: 600;
+    margin-bottom: -1rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .CartBtn:hover .IconContainer {
+    transform: translateX(58px);
+    border-radius: 40px;
+    transition-duration: .5s;
+  }
+  
+  .CartBtn:hover .text {
+    transform: translate(10px,0px);
+    transition-duration: .5s;
+  }
+  
+  .CartBtn:active {
+    transform: scale(0.95);
+    transition-duration: .5s;
+  }
+
+  /* CFG main PROMOCOES*/
+
+  .CartBtn-promo {
+    width: 140px;
+    height: 40px;
+    border-radius: 12px;
+    border: 1px solid var(--color-yellow-50);
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition-duration: .5s;
+    overflow: hidden;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.103);
+    position: relative;
+  }
+
+  .CartBtn-promo:hover .IconContainer {
+    transform: translateX(58px);
+    border-radius: 40px;
+    transition-duration: .5s;
+  }
+  
+
+  .text-promo {
+    height: 100%;
+    width: fit-content;
+    color: var(--color-yellow-50);
+    z-index: 1;
+    transition-duration: .5s;
+    font-size: 1.04em;
+    font-weight: 600;
+    margin-bottom: -1rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .CartBtn-promo:hover .text-promo {
+    transform: translate(10px,0px);
+    transition-duration: .5s;
+  }
+
+  /*CFG CONTATOS*/
+
+.form-group {
+    margin-bottom: 2%;
+}
+
+.insta{
+    padding-left: 16px;
+    text-decoration: none;
+    color: var(--color-yellow-50);
+}
+
+.rjtripA {
+    text-decoration: none;
+    color:var(--color-yellow-50);
+}
+
+.github {
+    text-decoration: none;
+    color: var(--color-yellow-50);
+}
+
+/* CFG main cadastro*/
+#loginCadastro {
+  text-decoration: none;
+  color: var(--color-dark-900);
+}
+
+#loginCadastro:hover{
+  transition: all 0.3s ease 0s;
+  color: var(--color-yellow-50);
+}
+
+/*CFG FOOTTER*/
+
+footer {
+    background: rgb(49,45,55);
+    background: radial-gradient(circle, rgba(49,45,55,1) 0%, rgba(0,0,0,1) 100%);
+}
+

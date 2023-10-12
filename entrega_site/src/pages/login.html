@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="../assets/style/style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <link rel="shortcut icon" href="../assets/img/favIcon96px.ico.png" type="image/x-icon">
+        <title>RJTRIP - Cadastro</title>
+    </head>
+<body>
+    <header class="p-3 text-bg-transparent">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+
+                <a href="Index.html"><img src="../assets/img/logo100px.png" alt="" srcset=""></a>
+                <nav style="margin-left: 2%;"
+                    class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="Index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="destinos.html">Destinos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="promocoes.html">Promoções</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contatos.html">Contatos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pacotes.html">Pacotes</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="text-end">
+                    <a href="carrinho.html"><button data-quantity="0" class="btn-cart">
+                        <svg class="icon-cart" viewBox="0 0 24.38 30.52" height="30.52" width="24.38"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <title>icon-cart</title>
+                            <path transform="translate(-3.62 -0.85)"
+                                d="M28,27.3,26.24,7.51a.75.75,0,0,0-.76-.69h-3.7a6,6,0,0,0-12,0H6.13a.76.76,0,0,0-.76.69L3.62,27.3v.07a4.29,4.29,0,0,0,4.52,4H23.48a4.29,4.29,0,0,0,4.52-4ZM15.81,2.37a4.47,4.47,0,0,1,4.46,4.45H11.35a4.47,4.47,0,0,1,4.46-4.45Zm7.67,27.48H8.13a2.79,2.79,0,0,1-3-2.45L6.83,8.34h3V11a.76.76,0,0,0,1.52,0V8.34h8.92V11a.76.76,0,0,0,1.52,0V8.34h3L26.48,27.4a2.79,2.79,0,0,1-3,2.44Zm0,0">
+                            </path>
+                        </svg>
+                        <span class="quantity"></span>
+                    </button></a>
+                    <svg class="text-light" xmlns="http://www.w3.org/2000/svg" width="24.38" height="30.52"
+                        fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                        <path
+                            d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
+                    </svg>
+                    <a href="cadastro.html"><button type="button" class="btn btn-outline-warning me-2 text-white">Entre ou Cadastre-se</button></a>
+                </div>
+            </div>
+            <span class="divisor"></span>
+            <div class="d-flex flex-sm-column" style="margin-top: 8%;">
+                <div class="row">
+                    <div class="col-sm">
+                        <h2 class="title text-center text-white fw-bolder">Descubra as maravilhas do Rio de Janeiro<br>
+                            com
+                            a <span class="spanTxt">RJTRIP</span> </h2>
+
+                    </div>
+                </div>
+            </div>
+    </header>
+
+
+    <main class="container" style="margin-top: 4%;">
+
+        <div>
+            <div class="row" style="margin-bottom: 6%;"><h1 class="title text-center">Não tem uma conta? <a id="loginCadastro" href="cadastro.html">clique aqui</a> para criar.</h1></div>
+            <form class="row g-3 justify-content-center">
+                <div class="col-md-3">
+                  <label for="inputEmail" class="form-label">Email</label>
+                  <input type="email" class="form-control border border-warning bg-transparent" id="inputEmail" placeholder="Email">
+                </div>
+                <div class="col-md-3">
+                  <label for="inputPassword" class="form-label">Senha</label>
+                  <input type="password" class="form-control border border-warning bg-transparent" id="inputPassword" placeholder="Senha">
+                </div>
+                <div class="col-12 text-center">
+                  <button type="submit" class="btn btn-warning">Logar</button>
+                </div>
+              </form>
+
+        </div>
+
+    </main>
+
+    <footer id="footer" class="bg-dark text-light text-center py-3" style="margin-top: 8%;">
+        <p>Todos os direitos reservados &copy; 2023 <span class="spanTxt">RJTRIP</span></p>
+        <p>Developed by: <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-github" viewBox="0 0 16 16">
+                <path
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+            </svg> <a style="color: #fdba00;
+          text-decoration: none;" class="github" href="https://github.com/ThallesSampaio"
+                target="_blank">ThallesSampaio</a></p>
+    </footer>
+
+    <script src="../assets/javascript/script.js"></script>
+</body>
+</html>
